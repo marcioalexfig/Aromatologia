@@ -2,112 +2,22 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="/Users/alex/.android/build-cache/1bb67e7d1a653c4fa6496a368f6b6ada2ad1eed3/output/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/alex/Documents/AndroidStudioProjects/Aromatologia/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
-        <dex dex="/Users/alex/Documents/AndroidStudioProjects/OleosEssenciaisArteeSaude/app/build/intermediates/pre-dexed/debug/classes_c60e006bab5944e652741a531d33786ce0e44402.jar" />
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/alex/Documents/AndroidStudioProjects/Aromatologia/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_f274133d59bc5e73036947aff4832a71b6897998/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/alex/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/alex/Documents/AndroidStudioProjects/Aromatologia/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
-        <dex dex="/Users/alex/Documents/AndroidStudioProjects/OleosEssenciaisArteeSaude/app/build/intermediates/pre-dexed/debug/constraint-layout-solver-1.0.2_69a1fa754c8714b74803c0d34a76bc90ad0b3e41.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/alex/.android/build-cache/28fcbbbd4c93e62579151347bb353d86df88d2d5/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
-        <dex dex="/Users/alex/Documents/AndroidStudioProjects/OleosEssenciaisArteeSaude/app/build/intermediates/pre-dexed/debug/classes_5ec523e8ddcd7f9ff264f0e55b2dbfa781cf7038.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/alex/.android/build-cache/337738efaee61d3a225d06b0bccbda2f2e8abf17/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
-        <dex dex="/Users/alex/Documents/AndroidStudioProjects/OleosEssenciaisArteeSaude/app/build/intermediates/pre-dexed/debug/classes_6733ee3f7ef0f7342061b989434610c009360e70.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/alex/.android/build-cache/b9a9b04c33e17f7e69eff4becfea0bd9e15955f7/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
-        <dex dex="/Users/alex/Documents/AndroidStudioProjects/OleosEssenciaisArteeSaude/app/build/intermediates/pre-dexed/debug/classes_841aba5c56bd59dbea9f693b24bfc49239c862ca.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/alex/.android/build-cache/6244c0bb04670c89bc8a9170d3dea46e151f960f/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
-        <dex dex="/Users/alex/Documents/AndroidStudioProjects/OleosEssenciaisArteeSaude/app/build/intermediates/pre-dexed/debug/classes_f63a50e7207e3e1360edebf12bf992fef474070e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/alex/.android/build-cache/361280903849d22fb2cdc4ae2a5c89edfdca89b4/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="9935891f23923f39d002087085d9696568a9f657">
-        <dex dex="/Users/alex/Documents/AndroidStudioProjects/OleosEssenciaisArteeSaude/app/build/intermediates/pre-dexed/debug/classes_7211bf3de08178a7310228091e6bcaa1292807da.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/alex/.android/build-cache/5a74b78e433419564c8c9994323260f544fdbeee/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
-        <dex dex="/Users/alex/Documents/AndroidStudioProjects/OleosEssenciaisArteeSaude/app/build/intermediates/pre-dexed/debug/classes_ca6af863e0b04c558a38d004c1b57cfe2ee849d1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/alex/.android/build-cache/0262563b61db8ae168a142bab310e8c624fce68c/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
-        <dex dex="/Users/alex/Documents/AndroidStudioProjects/OleosEssenciaisArteeSaude/app/build/intermediates/pre-dexed/debug/classes_3f909a2a506d9be651656a6df9aeee9ccbf3ef3f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/alex/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/26.0.0-alpha1/support-annotations-26.0.0-alpha1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="023ee503b631f69511e335a061ea008f8da60f40">
-        <dex dex="/Users/alex/Documents/AndroidStudioProjects/OleosEssenciaisArteeSaude/app/build/intermediates/pre-dexed/debug/support-annotations-26.0.0-alpha1_5d9684d766ab83805930ef9f8a480f21407a7706.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/alex/.android/build-cache/606262540d802715e87e722c249178f1f219777a/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="952944218ecedea1554a513dec0c14d570642843">
-        <dex dex="/Users/alex/Documents/AndroidStudioProjects/OleosEssenciaisArteeSaude/app/build/intermediates/pre-dexed/debug/classes_090fcdaf6c469bef9eb6236eba0862d1c6aa0582.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/alex/.android/build-cache/0163c57059ea1d3687c069318d50ef3d7e39bed3/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/alex/Documents/AndroidStudioProjects/OleosEssenciaisArteeSaude/app/build/intermediates/pre-dexed/debug/classes_5f54f44cf9934b2f9933a45ca1a21b94680aa7e5.jar" />
+        sha1="4046e3825c2895e81c2b94af2b56eaa58795d452">
+        <dex dex="/Users/alex/Documents/AndroidStudioProjects/Aromatologia/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_bab7b34d91e13897d5e738516132594b50d9bd40/classes.dex" />
     </item>
 
 </items>

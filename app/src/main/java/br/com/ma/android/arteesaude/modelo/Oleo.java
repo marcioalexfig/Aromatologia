@@ -4,22 +4,54 @@ package br.com.ma.android.arteesaude.modelo;
  * Created by alex on 05/10/17.
  */
 
-public class Embalagem {
+public class Oleo {
     private Integer id;
     private String descricao;
     private Integer volume;
     private Float valor;
 
-    public Embalagem(Integer id, String descricao, Integer volume, Float valor) {
+    public Oleo(Integer id, String descricao, Integer volume, Float valor) {
         this.id = id;
         this.descricao = descricao;
         this.volume = volume;
         this.valor = valor;
     }
 
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public Integer getVolume() {
+        return volume;
+    }
+
+    public void setVolume(Integer volume) {
+        this.volume = volume;
+    }
+
+    public Float getValor() {
+        return valor;
+    }
+
+    public void setValor(Float valor) {
+        this.valor = valor;
+    }
+
     @Override
     public String toString() {
-        return "Embalagem{" +
+        return "Oleo{" +
                 "id=" + id +
                 ", descricao='" + descricao + '\'' +
                 ", volume=" + volume +
@@ -32,12 +64,12 @@ public class Embalagem {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Embalagem embalagem = (Embalagem) o;
+        Oleo oleo = (Oleo) o;
 
-        if (!id.equals(embalagem.id)) return false;
-        if (!descricao.equals(embalagem.descricao)) return false;
-        if (!volume.equals(embalagem.volume)) return false;
-        return valor.equals(embalagem.valor);
+        if (!id.equals(oleo.id)) return false;
+        if (!descricao.equals(oleo.descricao)) return false;
+        if (!volume.equals(oleo.volume)) return false;
+        return valor.equals(oleo.valor);
 
     }
 
@@ -48,37 +80,5 @@ public class Embalagem {
         result = 31 * result + volume.hashCode();
         result = 31 * result + valor.hashCode();
         return result;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public String getDescricao() {
-        return descricao;
-    }
-
-    public Integer getVolume() {
-        return volume;
-    }
-
-    public Float getValor() {
-        return valor;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
-
-    public void setVolume(Integer volume) {
-        this.volume = volume;
-    }
-
-    public void setValor(Float valor) {
-        this.valor = valor;
     }
 }

@@ -1,5 +1,8 @@
 package br.com.ma.android.arteesaude.activity;
 
+
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
@@ -15,6 +18,7 @@ import br.com.ma.android.arteesaude.fragment.BaseFragment;
 import br.com.ma.android.arteesaude.fragment.EmbalagemFragment;
 import br.com.ma.android.arteesaude.fragment.OleoEssencialFragment;
 import br.com.ma.android.arteesaude.helper.SlidingTabLayout;
+import br.com.ma.android.arteesaude.util.database.SQLiteManutencao;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -52,6 +56,10 @@ public class MainActivity extends AppCompatActivity {
         //configurando cor do indicador de seleção de tab
         slidingTabLayout.setSelectedIndicatorColors(ContextCompat.getColor(this, R.color.colorPrimaryDark));
 
+//teste de base de dados
+        SQLiteDatabase banco = openOrCreateDatabase("aromatologia.db", Context.MODE_PRIVATE, null);
+        SQLiteManutencao sql = new SQLiteManutencao(banco);
+        sql.executar();
 
 
 
