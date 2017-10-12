@@ -1,0 +1,38 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.com.ma.android.arteesaude.activity.MainActivity">
+
+    <item android:title="@string/menu_cadastrar_valores"
+        android:id="@+id/item_cadastrar_valores"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_attach_money"
+        android:iconTint="@android:color/white"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/item_porcentagens"
+        android:orderInCategory="200"
+        android:title="@string/item_menu_porcentagens"
+        android:icon="@drawable/ic_colorize"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/item_comprar"
+        android:orderInCategory="200"
+        android:title="@string/item_menu_comprar"
+        android:icon="@drawable/ic_add_shopping_cart"
+         app:showAsAction="ifRoom"/>
+
+
+    <item android:title="@string/item_menu_sair"
+        android:id="@+id/item_sair"
+        android:orderInCategory="400"
+        android:icon="@drawable/ic_settings_power"
+         app:showAsAction="never"
+        />
+
+
+
+</menu>

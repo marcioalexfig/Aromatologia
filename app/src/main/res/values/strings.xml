@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Aromatologia</string>
+    <string name="menu_cadastrar_valores">Cadastrar Valores</string>
+    <string name="item_menu_pesquisa">Pesquisar</string>
+    <string name="item_menu_tabela">Tabela de Porcentagens</string>
+    <string name="item_menu_sair">Sair</string>
+    <string name="item_menu_comprar">Comprar</string>
+    <string name="item_menu_porcentagens">Porcentagens</string>
+
+
+</resources>
