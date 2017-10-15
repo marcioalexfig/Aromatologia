@@ -16,7 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.ValoresOleosActivity"></activity>
+        <activity android:name=".activity.ValoresOleosActivity" />
+        <activity android:name=".activity.ValoresBasesActivity" />
+        <activity android:name=".activity.ValoresEmbalagensActivity"></activity>
     </application>
 
 </manifest>

@@ -535,4 +535,50 @@ public class SQLiteManutencao {
 
         ).run();
     }
+
+    public List<Oleo> retornaOleos(){
+        Cursor cursor = null;
+
+        // OLEOS ------------------------
+        cursor = banco.rawQuery("SELECT id, desc, volume, valor FROM oleos", null);
+        int indiceColunaIdOL = cursor.getColumnIndex("id");
+        int indiceColunaDescOL = cursor.getColumnIndex("desc");
+        int indiceColunaVolumeOL = cursor.getColumnIndex("volume");
+        int indiceColunaValorOL = cursor.getColumnIndex("valor");
+
+
+        List<Oleo> oleos = new ArrayList<>();
+        if (cursor!=null) {
+            if (cursor.moveToFirst()){
+                do {
+                    Oleo oleo = new Oleo(
+                            cursor.getInt(indiceColunaIdOL),
+                            cursor.getString(indiceColunaDescOL),
+                            cursor.getInt(indiceColunaVolumeOL),
+                            cursor.getFloat(indiceColunaValorOL)
+                    );
+                    oleos.add(oleo);
+                } while (cursor.moveToNext());
+            }
+        }
+        return oleos;
+    }
+
+    public List<String> retornaDescricaoOleos(){
+        Cursor cursor = null;
+
+        // OLEOS ------------------------
+        cursor = banco.rawQuery("SELECT desc FROM oleos", null);
+        int indiceColunaDescOL = cursor.getColumnIndex("desc");
+        List<String> descOleos = new ArrayList<>();
+        if (cursor!=null) {
+            if (cursor.moveToFirst()){
+                do {
+                    descOleos.add(cursor.getString(indiceColunaDescOL));
+                } while (cursor.moveToNext());
+            }
+        }
+        return descOleos;
+    }
+
 }
