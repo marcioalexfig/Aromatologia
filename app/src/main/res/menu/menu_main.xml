@@ -3,12 +3,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="br.com.ma.android.arteesaude.activity.MainActivity">
 
-    <item android:title="@string/menu_cadastrar_valores"
-        android:id="@+id/item_cadastrar_valores"
+    <item android:title="Valores Óleos"
+        android:id="@+id/item_cadastrar_valores_oleos"
         android:orderInCategory="100"
         android:icon="@drawable/ic_attach_money"
         android:iconTint="@android:color/white"
-        app:showAsAction="ifRoom"
+        app:showAsAction="never"
+        />
+    <item android:title="Valores Bases"
+        android:id="@+id/item_cadastrar_valores_bases"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_attach_money"
+        android:iconTint="@android:color/white"
+        app:showAsAction="never"
+        />
+    <item android:title="@string/valores_embalagens"
+        android:id="@+id/item_cadastrar_valores_embalagens"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_attach_money"
+        android:iconTint="@android:color/white"
+        app:showAsAction="never"
         />
 
     <item
