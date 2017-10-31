@@ -17,19 +17,13 @@ import java.util.List;
 
 import br.com.ma.android.arteesaude.R;
 import br.com.ma.android.arteesaude.helper.TratamentoEventosMenu;
-import br.com.ma.android.arteesaude.util.database.SQLiteManutencao;
+import br.com.ma.android.arteesaude.util.database.SQLiteGerenciadorFacade;
 
 public class ValoresOleosActivity extends AppCompatActivity {
 
     private ListView listaOleos;
     private String[] oleosDesc;
 
-    private String[] detalhes = {
-            "Arianos são animados, independentes, individualistas, dinâmicos, corajosos e aventureiros",
-            "Taurinos são positivos, pacientes, determinados, noturnos, leais e românticos",
-            "Geminianos são positivos, mutáveis, racionais e bastante voláteis",
-            "...","...","...","...","...","...","...","...","...",
-    };
     private Toolbar mnToolbar;
 
     @Override
@@ -79,13 +73,13 @@ public class ValoresOleosActivity extends AppCompatActivity {
         Class classe = (new TratamentoEventosMenu()).tratarEventos(item);
         Intent intent = new Intent(ValoresOleosActivity.this, classe);
         startActivity(intent);
-        finish();
+        //finish();
         return true;
     }
 
     public String[] retornaArrayDescricaoOleos(){
         SQLiteDatabase banco = openOrCreateDatabase("aromatologia.db", Context.MODE_PRIVATE, null);
-        SQLiteManutencao sql = new SQLiteManutencao(banco);
+        SQLiteGerenciadorFacade sql = new SQLiteGerenciadorFacade(banco);
 
         List<String> arrayListStringOleo = new ArrayList<>();
         arrayListStringOleo = sql.retornaDescricaoOleos();

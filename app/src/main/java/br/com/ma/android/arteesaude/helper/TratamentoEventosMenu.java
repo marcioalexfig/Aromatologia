@@ -1,10 +1,13 @@
 package br.com.ma.android.arteesaude.helper;
 
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.MenuItem;
 
 import br.com.ma.android.arteesaude.R;
 import br.com.ma.android.arteesaude.activity.MainActivity;
+import br.com.ma.android.arteesaude.activity.ValoresBasesActivity;
+import br.com.ma.android.arteesaude.activity.ValoresEmbalagensActivity;
 import br.com.ma.android.arteesaude.activity.ValoresOleosActivity;
 
 /**
@@ -27,11 +30,11 @@ public class TratamentoEventosMenu  extends AppCompatActivity {
                     break;
 
                 case R.id.item_cadastrar_valores_bases:
-                    classe = ValoresOleosActivity.class;
+                    classe = ValoresBasesActivity.class;
                     break;
 
                 case R.id.item_cadastrar_valores_embalagens:
-                    classe = ValoresOleosActivity.class;
+                    classe = ValoresEmbalagensActivity.class;
                     break;
 
                 case R.id.item_sair:
@@ -42,7 +45,7 @@ public class TratamentoEventosMenu  extends AppCompatActivity {
                     break;
             }
         }catch (Exception e ){
-            e.printStackTrace();
+            Log.e("ERRO: ",e.getLocalizedMessage());
         }
         return classe;
     }

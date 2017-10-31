@@ -15,16 +15,12 @@ import br.com.ma.android.arteesaude.modelo.Oleo;
  * Created by alex on 12/10/17.
  */
 
-public class SQLiteManutencao {
+public class SQLiteGerenciadorFacade {
 
     private SQLiteDatabase banco = null;
 
-    public SQLiteManutencao(SQLiteDatabase banco){
+    public SQLiteGerenciadorFacade(SQLiteDatabase banco){
         this.banco = banco;
-    }
-
-    public void criarBanco(){
-        //SQLiteDatabase banco = SQLiteDatabase.openOrCreateDatabase(NOME_BANCO, MODE, null);
     }
 
     public void criarTabelas(){
@@ -581,4 +577,37 @@ public class SQLiteManutencao {
         return descOleos;
     }
 
+    public List<String> retornaDescricaoBases() {
+        Cursor cursor = null;
+
+        // BASES ------------------------
+        cursor = banco.rawQuery("SELECT desc FROM bases", null);
+        int indiceColunaDescBA = cursor.getColumnIndex("desc");
+        List<String> descBases = new ArrayList<>();
+        if (cursor!=null) {
+            if (cursor.moveToFirst()){
+                do {
+                    descBases.add(cursor.getString(indiceColunaDescBA));
+                } while (cursor.moveToNext());
+            }
+        }
+        return descBases;
+    }
+
+    public List<String> retornaDescricaoEmbalagens() {
+        Cursor cursor = null;
+
+        // EMBALAGENS ------------------------
+        cursor = banco.rawQuery("SELECT desc FROM embalagens", null);
+        int indiceColunaDescEM = cursor.getColumnIndex("desc");
+        List<String> descEmbalagens = new ArrayList<>();
+        if (cursor!=null) {
+            if (cursor.moveToFirst()){
+                do {
+                    descEmbalagens.add(cursor.getString(indiceColunaDescEM));
+                } while (cursor.moveToNext());
+            }
+        }
+        return descEmbalagens;
+    }
 }

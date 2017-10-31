@@ -3,14 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="br.com.ma.android.arteesaude.activity.MainActivity">
 
-    <item android:title="Valores Óleos"
+    <item android:title="@string/valores_oleos"
         android:id="@+id/item_cadastrar_valores_oleos"
         android:orderInCategory="100"
         android:icon="@drawable/ic_attach_money"
         android:iconTint="@android:color/white"
         app:showAsAction="never"
         />
-    <item android:title="Valores Bases"
+    <item android:title="@string/valores_bases"
         android:id="@+id/item_cadastrar_valores_bases"
         android:orderInCategory="100"
         android:icon="@drawable/ic_attach_money"

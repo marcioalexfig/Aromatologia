@@ -7,6 +7,8 @@
     <string name="item_menu_comprar">Comprar</string>
     <string name="item_menu_porcentagens">Porcentagens</string>
     <string name="valores_embalagens">Valores Embalagens</string>
+    <string name="valores_oleos">Valores Óleos</string>
+    <string name="valores_bases">Valores Bases</string>
 
 
 </resources>

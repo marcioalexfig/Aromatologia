@@ -20,7 +20,7 @@ import br.com.ma.android.arteesaude.fragment.EmbalagemFragment;
 import br.com.ma.android.arteesaude.fragment.OleoEssencialFragment;
 import br.com.ma.android.arteesaude.helper.SlidingTabLayout;
 import br.com.ma.android.arteesaude.helper.TratamentoEventosMenu;
-import br.com.ma.android.arteesaude.util.database.SQLiteManutencao;
+import br.com.ma.android.arteesaude.util.database.SQLiteGerenciadorFacade;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
      */
     private void manutencaoBaseDeDados() {
         SQLiteDatabase banco = openOrCreateDatabase("aromatologia.db", Context.MODE_PRIVATE, null);
-        SQLiteManutencao sql = new SQLiteManutencao(banco);
+        SQLiteGerenciadorFacade sql = new SQLiteGerenciadorFacade(banco);
         sql.executar();
     }
 
