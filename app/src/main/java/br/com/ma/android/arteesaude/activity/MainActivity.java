@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         slidingTabLayout.setSelectedIndicatorColors(ContextCompat.getColor(this, R.color.colorPrimaryDark));
 
         //teste e carga de base de dados - manter comentado
-        //manutencaoBaseDeDados();
+        manutencaoBaseDeDados();
 
 
 
